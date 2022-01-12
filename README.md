@@ -11,7 +11,7 @@ It uses a lot of promise based components as it deals with APIs
     -Auto Word Complete functionality (from Country's Array)
 
 ## Screenshots:
-![alt text](https://github.com/akarshshri/GeoInfo/blob/main/src/Screenshots/1.png)
-![alt text](https://github.com/akarshshri/GeoInfo/blob/main/src/Screenshots/2.png)
-![alt text](https://github.com/akarshshri/GeoInfo/blob/main/src/Screenshots/3.png)
+![alt text](https://github.com/akarshshri/GeoInfo/tree/main/Screenshots/1.png)
+![alt text](https://github.com/akarshshri/GeoInfo/tree/main/Screenshots/2.png)
+![alt text](https://github.com/akarshshri/GeoInfo/tree/main/Screenshots/3.png)
 

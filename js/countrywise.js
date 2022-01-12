@@ -1,6 +1,7 @@
 var langArray = [];
 var test;
 query = localStorage.getItem("storageName");
+
 const countryInfo = async () => {
 
     

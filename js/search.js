@@ -1,5 +1,18 @@
-var query = 'https://restcountries.com/v3.1/name/india';
+var query; 
+
 const search = ()=>{
-    window.location.href = query;
-    module.exports = {query};
+    query = document.getElementById('myInput').value;
+    var getInput = document.getElementById('myInput').value;
+    localStorage.setItem("storageName",getInput);
+    console.log(getInput)
+    //module.exports = {query};
+    //console.log ('Search clicked')
+    window.location.href = '/country.html';
 } 
+
+try{
+    var btnClick = document.getElementById("btnSearch");
+    btnClick.addEventListener("click",search);
+}
+catch(e)
+{}

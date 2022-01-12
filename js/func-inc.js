@@ -18,25 +18,29 @@
                 countryArray.push(temp)
             });
             countryArray.sort()
-
+            //console.log(countryArray)
         }
         conv2Array();
         //var values = temp.keys(data).map(function (key) { return data[key]; });
         console.log(Object.values(data[6].languages));
        // console.log(data[1].languages)
-
+    countryArray.forEach(myFunction);
     }
 
     getCountry();
 
     // Printing country Name on Index.html
-    const myFunction = (element, index) => {
+    const myFunction = (element,index) => {
+        
         if (index < 83) {
-            document.getElementById('col1').innerHTML += "<br>" + element;
-        }
-        else if (index < 166) {
-            document.getElementById('col2').innerHTML += "<br>" + element;
-        } else {
-            document.getElementById('col3').innerHTML += "<br>" + element;
-        }
+            document.getElementById('col1').innerHTML += "<br><a href='" + element;
+            //console.log(element);
+            }
+            else if (index < 166) {
+                document.getElementById('col2').innerHTML += "<br>" + element;
+            } else {
+                document.getElementById('col3').innerHTML += "<br>" + element;
+            }
+       
     }
+

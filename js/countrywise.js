@@ -1,8 +1,10 @@
 var langArray = [];
 var test;
+query = localStorage.getItem("storageName");
 const countryInfo = async () => {
 
-    let api_url = query
+    
+    let api_url = 'https://restcountries.com/v3.1/name/'+ query;
 
     // Making an API call (request)
     // and getting the response back
@@ -46,11 +48,11 @@ const countryInfo = async () => {
     //Weather API
     var key= 'ac6a2e55a2394eebb35202414221101' //Always  keep the API and other sensitive information in .env file.
     var api= 'https://api.weatherapi.com/v1/current.json?key='+key+'&q='+ countryName +'&aqi=no' 
-    console.log(api)
+    
     const weatherresponse = await fetch(api);
     var weatherData = await weatherresponse.json();
     weatherData = Object.values(weatherData)
-    console.log(weatherData)
+    
     //Weather variables
     w_temp = weatherData[1].temp_c;
     w_feelsLike  = weatherData[1].feelslike_c;

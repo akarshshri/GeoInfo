@@ -33,14 +33,31 @@
     const myFunction = (element,index) => {
         
         if (index < 83) {
-            document.getElementById('col1').innerHTML += "<br><a href='" + element;
+            document.getElementById('col1').innerHTML += "<span style='cursor: pointer;' id='span"+index+"' onclick='myFunc(this.id)'>"+ element+"</span><br>";
             //console.log(element);
-            }
-            else if (index < 166) {
-                document.getElementById('col2').innerHTML += "<br>" + element;
-            } else {
-                document.getElementById('col3').innerHTML += "<br>" + element;
-            }
-       
+        }
+        else if (index < 166) {
+            document.getElementById('col2').innerHTML += "<span style='cursor: pointer;' id='span"+index+"' onclick='myFunc(this.id)'>"+ element+"</span><br>";
+        } else {
+            document.getElementById('col3').innerHTML += "<span style='cursor: pointer;' id='span"+index+"' onclick='myFunc(this.id)'>"+ element+"</span><br>";
+        }
+        
     }
+    
+    try{
+        
+        var btnClick = document.getElementsByClassName("span0");
+        btnClick.addEventListener("click",myFunc);
 
+   
+    }
+    catch(e)
+    {}
+    const myFunc = (clickedid)=>{
+        var county = document.getElementById(clickedid).innerHTML;
+        document.getElementById("myInput").value = county;
+        console.log('fired')
+    }
+    const myclick = (id)=>{
+        console.log(id)
+    }

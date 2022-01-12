@@ -29,6 +29,7 @@ const countryInfo = async () => {
     document.getElementById('mapHead').innerHTML += "Here is the map of "+data[0].name.common;
     document.getElementById("flag").src = countryFlagLink;
     document.getElementById("moreInfo").href = "https://www.infoplease.com/world/countries/" + countryName;
+    document.getElementById("btnMap").href = data[0].maps.googleMaps;
     document.getElementById("gmap_canvas").src = mapSrc;
     document.getElementById("img1").src = "https://source.unsplash.com/random/?"+countryName+",festival";
     document.getElementById("img2").src = "https://source.unsplash.com/random/?"+countryName+",beautiful";
